@@ -10,6 +10,7 @@ class Game {
         document.body.appendChild( this.canvas );
         this.canvas.width = width || 320;
         this.canvas.height = height || 320;
+        
         this.objs = [];
     }
 
@@ -22,14 +23,15 @@ class Game {
         ctx.fillStyle="#000000" ;
         ctx.fillRect( 0,0,this.canvas.width,this.canvas.height );
 
-        for (let i=0; i<this.objs.length; i++ ) {
+        for ( let i=0; i<this.objs.length; i++ ) {
             this.objs[i].update( this.canvas );
         }
-
+       
         requestAnimationFrame( this._mainLoop.bind( this ));
     }
 
     add( obj ) {
         this.objs.push( obj );
     }
+    
 }
