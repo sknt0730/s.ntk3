@@ -12,6 +12,6 @@ class Sprite {
         }
     rander( canvas ) {
         const _ctx = canvas.getContext( '2d' );
-        _ctx.drawImage this.img, this.x, this.y );
+        _ctx.drawImage( this.img, this.x, this.y );
     }
 }
