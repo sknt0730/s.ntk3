@@ -1,0 +1,11 @@
+element.style {
+    background-color: lightpink;
+    border-bottom: solid 2px #000000;
+    border-right: solid 2px #000000;
+    border-radius: 20px;
+    font-weight: bold;
+    color: #FFF;
+    text-decoration: none;
+    padding: 10px;
+    display: inline-block;
+}
